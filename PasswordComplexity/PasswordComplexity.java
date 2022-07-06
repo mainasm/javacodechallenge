@@ -14,6 +14,7 @@ public class PasswordComplexity {
         else{
             return false;
         }
+<<<<<<< HEAD
     }
     //Solution 2 by Kathryn Hodges
 
@@ -44,6 +45,10 @@ public class PasswordComplexity {
             // && password.matches(regex:".*\\d.*")
             // && password.matches(regex:".[a-z].*")
             // && password.matches(regex:".[A-Z].*");
+=======
+
+    }
+>>>>>>> e2339e80cac7d1275e52ace2c6ef07d03a7c9e38
 
     public static void main(String[] args) {
 
@@ -55,4 +60,7 @@ public class PasswordComplexity {
                isPasswordComplex(userInput));
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e2339e80cac7d1275e52ace2c6ef07d03a7c9e38
