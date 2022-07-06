@@ -4,16 +4,14 @@ public class PasswordComplexity {
 
     public static boolean isPasswordComplex(String password) {
         /**
-         * Solution for checking password complexity
+         * Solution {one} for checking password complexity
          * Split a string into characters then uses anyMatch method for validation
          * @author samuel Githogori
          */
-        if(password.length()>=6 && password.chars().anyMatch(Character::isLowerCase)
+        return password.length()>=6 && password.chars().anyMatch(Character::isLowerCase)
         && password.chars().anyMatch(Character::isUpperCase)
-        && password.chars().anyMatch(Character::isDigit)) return true;
-        else{
-            return false;
-        }
+        && password.chars().anyMatch(Character::isDigit);
+    }
 <<<<<<< HEAD
     }
     //Solution 2 by Kathryn Hodges
