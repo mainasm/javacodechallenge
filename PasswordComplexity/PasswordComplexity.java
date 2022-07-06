@@ -14,8 +14,36 @@ public class PasswordComplexity {
         else{
             return false;
         }
-
     }
+    //Solution 2 by Kathryn Hodges
+
+        // if(password.length()<6){
+        //     return false;
+        // }
+
+        // boolean hasLowercaseletter = false;
+        // boolean hasUppercaseLetter = false;
+        // boolean hasNumber = false;
+
+        // for (int i = 0; i<password.length() || (
+        //    !hasLowercaseletter && !hasUppercaseLetter &!hasNumber); i++)
+            // char current = password.charAt(i)
+            // 
+            // if (Character.isDigit(current)){
+        //         hasNumber = true;}
+        //     } else if(Character.isUpperCase(current)){
+        //         hasUppercaseLetter = true;}
+        //     } else if(Character.isLowerCase(current)){
+        //         hasLowercaseletter = true;}
+    //     })
+    //     return hasNumber && hasUppercaseLetter && hasLowercaseLetter;
+    // }
+
+    //Solution 3 by Kathryn Hodges
+            // return password.length(>=6)
+            // && password.matches(regex:".*\\d.*")
+            // && password.matches(regex:".[a-z].*")
+            // && password.matches(regex:".[A-Z].*");
 
     public static void main(String[] args) {
 
@@ -27,3 +55,4 @@ public class PasswordComplexity {
                isPasswordComplex(userInput));
     }
 }
+
